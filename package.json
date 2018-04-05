@@ -1,0 +1,30 @@
+{
+  "name": "importdefinitionfiles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "messageformat": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrDesjardins/importdefinitionfiles.git"
+  },
+  "keywords": [
+    "typescript",
+    "definition",
+    "file",
+    "ambiant",
+    "type"
+  ],
+  "author": "Patrick Desjardins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrDesjardins/importdefinitionfiles/issues"
+  },
+  "homepage": "https://github.com/MrDesjardins/importdefinitionfiles#readme"
+}

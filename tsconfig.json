@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "build/dist",
+    "module": "es6",
+    "target": "es6",
+    "lib": [
+      "es6",
+    ],
+    "sourceMap": true,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "pretty": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "coverage",
+    "static"
+  ],
+  "typeRoots": [
+    "./node_modules/@types",
+    "./definitionfiles"
+  ]
+}
