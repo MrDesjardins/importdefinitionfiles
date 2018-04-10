@@ -17,16 +17,16 @@
 //-----------------------------------------------------------------------------------------------------------------------------------------------
 // Error: Could not find a declaration file for module 'messageformat'. 'node_modules/messageformat/lib/messageformat.js' implicitly has an 'any' type. 
 
-declare class MessageFormat {
-    constructor(message: string);
+// declare class MessageFormat {
+//     constructor(message: string);
 
-    compile: (messageSource: string) => MessageFormat.Msg;
+//     compile: (messageSource: string) => MessageFormat.Msg;
 
-}
-declare namespace MessageFormat {
-    type Msg = (params: {}) => string;
-}
-export = MessageFormat;
+// }
+// declare namespace MessageFormat {
+//     type Msg = (params: {}) => string;
+// }
+// export = MessageFormat;
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------
 // Option 3: From Ryan Cavanaugh comment https://github.com/Microsoft/TypeScript/issues/23185
@@ -40,3 +40,20 @@ export = MessageFormat;
 //         compile: (messageSource: string) => Msg;
 //     }
 // }
+
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+// Option 4: Following declaration file https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-class-d-ts.html
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+declare module "messageformat" {
+    class MessageFormat {
+        constructor(message: string);
+
+        compile: (messageSource: string) => MessageFormat.Msg;
+
+    }
+    namespace MessageFormat {
+        type Msg = (params: {}) => string;
+    }
+    export = MessageFormat;
+}

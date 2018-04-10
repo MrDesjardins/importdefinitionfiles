@@ -5,5 +5,5 @@ export function localize(key: string, params: {}): string {
     // Read the file here
     // Get the ICU string from the file
     const msg = mf.compile("test");
-    return msg;
+    return msg({});
 }
